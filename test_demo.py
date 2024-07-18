@@ -10,4 +10,9 @@ def test_demo():
         page.goto("https://www.saucedemo.com/")
         expect(page).to_have_title(re.compile("Swag Labs"))
         #Change time value (seconds) for debugging purposes.
-        time.sleep(5)
+        time.sleep(500)
+   
+#This is for use without problems the comand "python3 test_demo.py"
+#It's optional because "pytest" thats fine without this lines.
+if __name__=="__main__":
+    test_demo()
